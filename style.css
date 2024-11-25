@@ -1,0 +1,223 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Amazon Ember", Arial, sans-serif;
+
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, p {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ff5733, #ffcc00);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 5px solid #f1f1f1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 15px 40px;
+    background-color: #ffd814;
+    color: black;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 20px rgba(255, 87, 51, 0.3);
+}
+
+.btn:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Exclusive Deals Section */
+.exclusive-deals {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.exclusive-deals h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.deal-item {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.deal-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.deal-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #e74c3c;
+}
+
+.deal-item p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+}
+
+.deal-item .btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    background-color: #27ae60;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.deal-item .btn:hover {
+    background-color: #2ecc71;
+    transform: scale(1.05);
+}
+
+/* Call to Action Section */
+.cta {
+    background-color: #34495e;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.cta p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+.cta .btn {
+    font-size: 1.3rem;
+    padding: 14px 35px;
+    background-color: #f39c12;
+    border-radius: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta .btn:hover {
+    background-color: #f1c40f;
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+#footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#footer p {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#footer .social-links {
+    margin-top: 20px;
+}
+
+#footer .social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+#footer .social-links a:hover {
+    color: #f39c12;
+}
+
+/* Scroll Top Button */
+#scroll-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff5733;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#scroll-top:hover {
+    background-color: #c0392b;
+    transform: translateY(-5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .exclusive-deals h2 {
+        font-size: 2rem;
+    }
+
+    .cta h2 {
+        font-size: 2rem;
+    }
+
+    .cta .btn {
+        font-size: 1.1rem;
+    }
+
+    .deal-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .deal-item p {
+        font-size: 1rem;
+    }
+}
